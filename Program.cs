@@ -1,34 +1,430 @@
-﻿namespace AuthenticationUsingArrayOfStrings
+﻿namespace EnterIntegerBirthdateConvertToStringMonth
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string[] username = { "username1", "username2", "username3" };
-            string[] password = { "password1", "password2", "password3" };
+            Console.Write("Enter Month : ");
+            int month = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter Username: ");
-            string usernameInput = Console.ReadLine();
+            Console.Write("Enter Day : ");
+            int day = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter Password: ");
-            string passwordInput = Console.ReadLine();
+            Console.Write("Enter Year : ");
+            int year = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < username.Length; i++)
+            string monthWord;
+
+            switch (month)
             {
-                if (usernameInput.Equals(username[i], StringComparison.InvariantCultureIgnoreCase) && passwordInput.Equals(password[i], StringComparison.InvariantCultureIgnoreCase))
-                {
-                    Console.WriteLine();
-                    Console.WriteLine("Welcome " + usernameInput);
+                case 1:
+                    monthWord = "January";
+                    if (day <= 31 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
                     break;
-                }
-                else if (i >= username.Length - 1)
-                {
 
-                    Console.WriteLine();
-                    Console.WriteLine("Account Not Found!");
+                case 2:
+                    monthWord = "February";
+                    if (day <= 29 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
                     break;
-                }
+
+                case 3:
+                    monthWord = "March";
+                    if (day <= 31 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+                case 4:
+                    monthWord = "April";
+                    if (day <= 30 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+                case 5:
+                    monthWord = "May";
+                    if (day <= 31 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+                case 6:
+                    monthWord = "June";
+                    if (day <= 30 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+                case 7:
+                    monthWord = "July";
+                    if (day <= 31 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+                case 8:
+                    monthWord = "August";
+                    if (day <= 30 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+
+                case 9:
+                    monthWord = "September";
+                    if (day <= 31 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+
+                case 10:
+                    monthWord = "October";
+                    if (day <= 30 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+                case 11:
+                    monthWord = "November";
+                    if (day <= 31 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+                case 12:
+                    monthWord = "December";
+                    if (day <= 30 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Your Birthday is : " + monthWord + " " + day + ", " + year);
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
+
+                default:
+                    monthWord = "";
+                    if (day <= 31 && day >= 1)
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Month");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Month");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    else
+                    {
+                        if (year <= 2024 && year >= 1800)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Month");
+                            Console.WriteLine("Invalid Day");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid Month");
+                            Console.WriteLine("Invalid Day");
+                            Console.WriteLine("Invalid Year");
+                        }
+                    }
+                    break;
             }
         }
     }
-}
+    }
